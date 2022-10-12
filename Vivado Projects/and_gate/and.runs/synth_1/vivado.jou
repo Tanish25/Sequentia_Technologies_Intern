@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Jul 12 18:21:24 2022
+# Process ID: 5064
+# Log file: C:/Users/admin/OneDrive/Desktop/Vivado Projects/and/and.runs/synth_1/and_design_tb.vds
+# Journal file: C:/Users/admin/OneDrive/Desktop/Vivado Projects/and/and.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source and_design_tb.tcl

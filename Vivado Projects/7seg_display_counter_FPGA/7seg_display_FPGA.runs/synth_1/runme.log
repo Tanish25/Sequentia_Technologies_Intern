@@ -1,0 +1,388 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -mode batch -messageDb vivado.pb -source top.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Synth 8-256} -limit 10000
+# set_msg_config -id {Synth 8-638} -limit 10000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir {C:/Users/admin/OneDrive/Desktop/Vivado Projects/UART_TL16C750/7seg_display_FPGA/7seg_display_FPGA.cache/wt} [current_project]
+# set_property parent.project_path {C:/Users/admin/OneDrive/Desktop/Vivado Projects/UART_TL16C750/7seg_display_FPGA/7seg_display_FPGA.xpr} [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib {
+#   C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v
+#   C:/Users/admin/OneDrive/Desktop/Seven_segment_display/digits.v
+#   C:/Users/admin/OneDrive/Desktop/Seven_segment_display/tenHz_gen.v
+#   C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seven_seg_top.v
+# }
+# read_xdc C:/Users/admin/OneDrive/Desktop/Seven_segment_display/sev_seg.xdc
+# set_property used_in_implementation false [get_files C:/Users/admin/OneDrive/Desktop/Seven_segment_display/sev_seg.xdc]
+# catch { write_hwdef -file top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top -part xc7a100tcsg324-1
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 241.039 ; gain = 69.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seven_seg_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'tenHz_gen' [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/tenHz_gen.v:3]
+INFO: [Synth 8-256] done synthesizing module 'tenHz_gen' (1#1) [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/tenHz_gen.v:3]
+INFO: [Synth 8-638] synthesizing module 'digits' [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/digits.v:3]
+INFO: [Synth 8-256] done synthesizing module 'digits' (2#1) [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/digits.v:3]
+INFO: [Synth 8-638] synthesizing module 'seg7_control' [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v:3]
+	Parameter ZERO bound to: 7'b0000001 
+	Parameter ONE bound to: 7'b1001111 
+	Parameter TWO bound to: 7'b0010010 
+	Parameter THREE bound to: 7'b0000110 
+	Parameter FOUR bound to: 7'b1001100 
+	Parameter FIVE bound to: 7'b0100100 
+	Parameter SIX bound to: 7'b0100000 
+	Parameter SEVEN bound to: 7'b0001111 
+	Parameter EIGHT bound to: 7'b0000000 
+	Parameter NINE bound to: 7'b0000100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v:91]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v:106]
+INFO: [Synth 8-256] done synthesizing module 'seg7_control' (3#1) [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v:3]
+INFO: [Synth 8-256] done synthesizing module 'top' (4#1) [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seven_seg_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 275.242 ; gain = 104.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 275.242 ; gain = 104.160
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/sev_seg.xdc]
+Finished Parsing XDC File [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/sev_seg.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.338 . Memory (MB): peak = 589.988 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+ROM "clk_out_reg" won't be mapped to RAM because address size (23) is larger than maximum supported(18) 
+ROM "tens" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "digit_select" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v:62]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
+Module tenHz_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module digits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg7_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "hz10/clk_out_reg" won't be mapped to RAM because address size (23) is larger than maximum supported(18) 
+ROM "seg7/digit_select" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 589.988 ; gain = 418.906
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 589.988 ; gain = 418.906
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:43 ; elapsed = 00:01:53 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:01:53 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:45 ; elapsed = 00:01:55 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:45 ; elapsed = 00:01:55 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:45 ; elapsed = 00:01:55 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    10|
+|3     |LUT1   |    44|
+|4     |LUT2   |     5|
+|5     |LUT3   |    21|
+|6     |LUT4   |    42|
+|7     |LUT5   |    26|
+|8     |LUT6   |     7|
+|9     |MUXF7  |    16|
+|10    |MUXF8  |     8|
+|11    |FDCE   |    59|
+|12    |LD     |     7|
+|13    |IBUF   |     2|
+|14    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |   259|
+|2     |  digs   |digits       |    93|
+|3     |  hz10   |tenHz_gen    |    80|
+|4     |  seg7   |seg7_control |    72|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:45 ; elapsed = 00:01:55 . Memory (MB): peak = 589.988 ; gain = 418.906
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:26 . Memory (MB): peak = 589.988 ; gain = 87.367
+Synthesis Optimization Complete : Time (s): cpu = 00:01:45 ; elapsed = 00:01:56 . Memory (MB): peak = 589.988 ; gain = 418.906
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LD => LDCE: 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:52 . Memory (MB): peak = 589.988 ; gain = 402.113
+# write_checkpoint -noxdef top.dcp
+# catch { report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.236 . Memory (MB): peak = 589.988 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 13 16:22:24 2022...

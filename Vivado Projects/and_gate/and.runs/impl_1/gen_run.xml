@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1657630275">
+  <File Type="PWROPT-DCP" Name="and_design_tb_pwropt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PLACE-DCP" Name="and_design_tb_placed.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DRC" Name="and_design_tb_drc_pwropted.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="and_design_tb_timing_summary_routed.rpt"/>
+  <File Type="PA-TCL" Name="and_design_tb.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DCP" Name="and_design_tb_opt.dcp"/>
+  <File Type="OPT-DRC" Name="and_design_tb_drc_opted.rpt"/>
+  <File Type="PLACE-IO" Name="and_design_tb_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="and_design_tb_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="and_design_tb_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="and_design_tb_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="and_design_tb_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="and_design_tb_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="and_design_tb_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="and_design_tb_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="and_design_tb_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="and_design_tb_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="and_design_tb_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="and_design_tb_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="and_design_tb_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="and_design_tb_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="and_design_tb_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="and_design_tb_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="and_design_tb_route_status.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="and_design_tb_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="and_design_tb_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="and_design_tb_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="and_design_tb_postroute_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="and_design_tb.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="and_design_tb_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="and_design_tb_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="and_design_tb_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="and_design_tb.bit"/>
+  <File Type="BG-BIN" Name="and_design_tb.bin"/>
+  <File Type="BITSTR-MSK" Name="and_design_tb.msk"/>
+  <File Type="BITSTR-RBT" Name="and_design_tb.rbt"/>
+  <File Type="BITSTR-NKY" Name="and_design_tb.nky"/>
+  <File Type="BITSTR-BMM" Name="and_design_tb_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="and_design_tb.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="and_design_tb.sysdef"/>
+  <File Type="BG-BGN" Name="and_design_tb.bgn"/>
+  <File Type="BG-DRC" Name="and_design_tb.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/and_design_tb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="and_design_tb"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/const_and.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/const_and.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

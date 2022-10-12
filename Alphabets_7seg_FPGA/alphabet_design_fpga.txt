@@ -1,0 +1,151 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 13.07.2022 17:12:13
+// Design Name: 
+// Module Name: Letters
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+ `timescale 1ns / 1ps
+//this module brings all submodules together and get instantiated 
+module Top;
+    reg clk;       // from board pin E3
+    reg reset;            // E16 maybe
+    wire [6:0] seg;       // 7 segment display segment pattern
+    wire [7:0] digit;      // display anodes
+    
+    
+ 
+    
+    // Instantiate inner design module
+  
+    
+    Letters l(.clk(clk), .reset(reset),  .seg(seg), .digit(digit));
+  
+endmodule
+
++
++
++`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 13.07.2022 17:12:13
+// Design Name: 
+// Module Name: Letters
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module Letters(
+input clk,
+input reset,
+   output reg [6:0] seg,       // segment pattern for alphabets
+ output reg [7:0] digit) ;     // digit select signals
+
+parameter T=7'b011_1001;
+parameter A=7'b000_1000;
+parameter N=7'b000_1001;
+parameter I=7'b100_1111;
+parameter S=7'b010_0100;
+parameter H=7'b100_1000;
+
+
+
+  // To select each digit in turn
+    reg [2:0] digit_select;     // 3 bit counter for selecting each of 8 digits
+    reg [16:0] digit_timer;     // counter for digit refresh
+    
+    // Logic for controlling digit select and digit timer
+    always @(posedge clk or posedge reset)
+    begin
+        if(reset)
+         begin
+            digit_select <= 0;//to select which of the 4 digits
+            digit_timer <= 0;//to time each digit 
+        end
+        else if(digit_timer == 99_999)
+            begin         // The period of 100MHz clock is 10ns (1/100,000,000 seconds)
+                digit_timer <= 0;                   // 10ns x 100,000 = 1ms
+                digit_select <=  digit_select + 1;
+            end
+            else
+                digit_timer <=  digit_timer + 1;
+    end
+    
+ 
+    //all segments of a particular digit are connected to the same anode node(pin)
+always @(digit_select)
+           begin
+            case(digit_select) 
+                3'b000 : digit = 8'b1111_1110;   // Turn on first digit
+                3'b001 : digit = 8'b1111_1101;   // Turn on second digit
+                3'b010 : digit = 8'b1111_1011;   // Turn on third digit
+                3'b011 : digit = 8'b1111_0111;   // Turn on fourth digit
+                3'b100 : digit = 8'b1110_1111;   // Turn on fifth digit
+                3'b101 : digit = 8'b1101_1111;   // Turn on sixth digit
+                3'b110 : digit = 8'b1011_1111;   // Turn on seventh digit
+                3'b111 : digit = 8'b0111_1111;   // Turn on eighth digit
+                         
+            endcase
+        end
+    
+    // Logic for driving segments based on which digit is selected and the value of each digit
+    //the corresponding segments of all digits are connected to the same cathode node(pin)
+ always @(*)
+           case(digit_select)
+               3'b000 : begin       
+                  
+                           seg=H;
+                       end
+                3'b001 : begin       
+                                         
+                   seg=S;
+                      end
+                                              
+           3'b010 : begin       
+                                                                
+                      seg=I;
+               end
+               3'b011 : begin       
+                                 
+                   seg=N;
+               end
+           3'b100 : begin       
+                                 
+                   seg=A;
+               end
+               3'b101 : begin       
+                                  seg=T;
+              end
+              default: begin
+              seg=111_1111;
+              end
+              endcase
+
+endmodule

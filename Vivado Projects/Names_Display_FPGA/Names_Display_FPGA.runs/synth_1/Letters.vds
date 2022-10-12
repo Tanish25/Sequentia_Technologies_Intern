@@ -1,0 +1,473 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Jul 22 18:52:04 2022
+# Process ID: 2300
+# Log file: F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.runs/synth_1/Letters.vds
+# Journal file: F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Letters.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Synth 8-256} -limit 10000
+# set_msg_config -id {Synth 8-638} -limit 10000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir {F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.cache/wt} [current_project]
+# set_property parent.project_path {F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.xpr} [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib {{F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v}}
+# read_xdc {{F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.srcs/constrs_1/new/Letters.xdc}}
+# set_property used_in_implementation false [get_files {{F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.srcs/constrs_1/new/Letters.xdc}}]
+# catch { write_hwdef -file Letters.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top Letters -part xc7a100tcsg324-1
+Command: synth_design -top Letters -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 240.547 ; gain = 68.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Letters' [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:24]
+	Parameter A bound to: 7'b0001000 
+	Parameter B bound to: 7'b0000000 
+	Parameter C bound to: 7'b0110001 
+	Parameter D bound to: 7'b0000001 
+	Parameter E bound to: 7'b1100000 
+	Parameter F bound to: 7'b0111000 
+	Parameter G bound to: 7'b0100000 
+	Parameter H bound to: 7'b1001000 
+	Parameter I bound to: 7'b1001111 
+	Parameter J bound to: 7'b1000111 
+	Parameter K bound to: 7'b1110000 
+	Parameter L bound to: 7'b1110001 
+	Parameter M bound to: 7'b0001001 
+	Parameter N bound to: 7'b0001001 
+	Parameter O bound to: 7'b0000001 
+	Parameter P bound to: 7'b0011000 
+	Parameter Q bound to: 7'b0001001 
+	Parameter R bound to: 7'b0010000 
+	Parameter S bound to: 7'b0100100 
+	Parameter T bound to: 7'b0111001 
+	Parameter U bound to: 7'b1000001 
+	Parameter V bound to: 7'b1000001 
+	Parameter W bound to: 7'b1000000 
+	Parameter X bound to: 7'b1001000 
+	Parameter Y bound to: 7'b1001100 
+	Parameter Z bound to: 7'b0010010 
+	Parameter OFF bound to: 7'b1111111 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:95]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:153]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:231]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:271]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:309]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:349]
+INFO: [Synth 8-256] done synthesizing module 'Letters' (1#1) [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 274.699 ; gain = 103.094
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 274.699 ; gain = 103.094
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.srcs/constrs_1/new/Letters.xdc]
+Finished Parsing XDC File [F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.srcs/constrs_1/new/Letters.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 590.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+ROM "digit_select" won't be mapped to RAM because it is too sparse.
+ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+WARNING: [Synth 8-327] inferring latch for variable 'digit_reg' [F:/Tanish IITDh Drive/Sequentia/Names_7seg_FPGA/Names.v:96]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     65 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 13    
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Letters 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     65 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 13    
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "digit_select" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 590.148 ; gain = 418.543
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[64] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[63] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[62] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[61] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[60] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[59] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[58] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[57] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[56] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[55] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[54] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[53] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[52] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[51] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[50] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[49] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[48] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[47] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[46] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[45] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[44] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[43] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[42] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[41] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[40] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[39] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[38] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[37] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[36] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[35] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[34] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[33] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[32] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[31] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[30] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[29] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[28] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[27] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[26] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[25] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[24] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[23] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[22] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[21] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[20] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[19] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[18] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[17] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[16] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[15] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[14] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[13] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[12] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[11] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[10] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[9] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[8] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[7] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[6] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[5] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[4] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[3] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[2] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[1] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[0] ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[64]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[63]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[62]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[61]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[60]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[59]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[58]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[57]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[56]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[55]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[54]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[53]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[52]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[51]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[50]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[49]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[48]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[47]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[46]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[45]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[44]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[43]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[42]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[41]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[40]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[39]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[38]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[37]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[36]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[35]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[34]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[33]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[32]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[31]__0 ) is unused and will be removed from module Letters.
+WARNING: [Synth 8-3332] Sequential element (\overall_timer_reg[30]__0 ) is unused and will be removed from module Letters.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 590.148 ; gain = 418.543
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:43 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |    19|
+|4     |LUT2   |     5|
+|5     |LUT3   |    11|
+|6     |LUT4   |    20|
+|7     |LUT5   |     1|
+|8     |LUT6   |     2|
+|9     |FDCE   |    21|
+|10    |FDRE   |     3|
+|11    |FDSE   |     4|
+|12    |LD     |     8|
+|13    |IBUF   |     2|
+|14    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   116|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 590.148 ; gain = 418.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 131 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:18 . Memory (MB): peak = 590.148 ; gain = 86.301
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 590.148 ; gain = 418.543
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE (inverted pins: G): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:40 . Memory (MB): peak = 590.148 ; gain = 401.750
+# write_checkpoint -noxdef Letters.dcp
+# catch { report_utilization -file Letters_utilization_synth.rpt -pb Letters_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 590.148 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 22 18:53:55 2022...

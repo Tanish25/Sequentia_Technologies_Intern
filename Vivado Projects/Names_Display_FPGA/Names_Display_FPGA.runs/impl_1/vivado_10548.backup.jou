@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Jul 22 18:13:25 2022
+# Process ID: 2632
+# Log file: F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.runs/impl_1/Letters.vdi
+# Journal file: F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Names_Display_FPGA/Names_Display_FPGA.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Letters.tcl -notrace

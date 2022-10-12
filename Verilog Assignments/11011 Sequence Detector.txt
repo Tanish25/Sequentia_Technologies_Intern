@@ -1,0 +1,208 @@
+/*
+//input array in design block
+module JKF(input J,K,clk,rst, output reg q);
+  always@(posedge clk)
+    begin
+      if(rst)
+        q<=0;
+      else if(K && J)
+        begin q<=~q;
+       end
+        else
+          q<=J;
+    end
+endmodule
+
+//module SD(input X,clk,rst, output res);
+module SD(input [0:15] X_array,input clk,input rst, output res);
+  reg X;integer i;
+  wire J2,K2,J1;
+  wire Y2,Y1,Y0;
+  always@(posedge clk)
+    begin
+    for(i=0;i<16;i=1+1)
+      begin
+        X<=X_array[i];
+      end
+    end
+  and A1(J2,~X,Y1);
+  and A2(J1,X,Y0);
+  or R1(K2,~X,Y0);
+  and A3(res,X,Y2,Y0);
+  JKF F2(J2,K2,clk,rst,Y2);
+  JKF F1(J1,~X,clk,rst,Y1);
+  JKF F0(X,~X,clk,rst,Y0);
+     
+    
+endmodule
+*/
+//array in test block
+// Code your design module here
+module JKF(input J,K,clk,rst, output reg q);
+  always@(posedge clk)
+    begin
+      if(rst)
+        q<=0;
+      else 
+        begin
+          if(K && J)
+        q<=~q;
+          else if(~K && ~J)
+            q<=q;
+        else
+          q<=J;
+        end
+    end
+endmodule
+
+module SD(input X,clk,rst, output res);
+  wire J2,K2,J1;
+  wire Y2,Y1,Y0;
+  and A1(J2,~X,Y1);
+  and A2(J1,X,Y0);
+  or R1(K2,~X,Y0);
+  and A3(res,X,Y2,Y0);
+  JKF F2(J2,K2,clk,rst,Y2);
+  JKF F1(J1,~X,clk,rst,Y1);
+  JKF F0(X,~X,clk,rst,Y0);
+endmodule
+
+
+
+
+/*
+//input array in design block
+// Code your testbench here
+// or browse Examples
+module Test;
+  //reg [0:10] X;
+  reg [0:15] X_array;reg clk;reg rst;
+  wire res;
+  SD S1(X_array,clk,rst,res);
+  initial
+    begin
+   
+      clk=1;
+      rst=0;
+      X_array=16'hA07F;
+      #11;rst=1;
+      #10;rst=0;
+      #100;
+      $finish;
+    end
+    initial
+    begin
+     $dumpfile("dump.vcd");
+      $dumpvars();
+  end
+  always
+    begin
+    #5 clk=~clk;
+    end
+  
+endmodule
+
+
+// Code your testbench here
+// or browse Examples
+module Test;
+  //reg [0:10] X;
+  //reg [15:0] X_array;
+  initial
+    begin
+  //X_array=16'hA07F;//1010_0000_0111_1111
+    end
+   reg X,clk,rst;
+  wire res;//integer i;
+   // initial
+ /* always@(posedge clk)
+    begin
+    for(i=0;i<16;i=1+1)
+      begin
+        //@(clk) 
+        X<=X_array[i];
+        //@(clk) X<=0;
+      end
+    end*/
+ /*
+  SD S1(X,clk,rst,res);
+  initial
+    begin
+   
+      clk=1;
+      rst=0;
+     X=1;
+      #11;rst=1;
+      #10;rst=0;X=0;
+      #10;X=1;
+      #10;X=1;
+      #10;X=0;
+      #10;X=1;
+      #10;X=1;
+      #10;X=0;
+      #10;X=1;
+      #10;X=0;
+      #100;
+      $finish;
+    end
+    initial
+    begin
+     $dumpfile("dump.vcd");
+      $dumpvars();
+  end
+  always
+    begin
+    #5 clk=~clk;
+    end
+ 
+endmodule
+*/  
+
+module Test;
+  //reg [0:10] X;
+  reg [0:15] X_array;
+
+  always
+    begin
+    #5 clk=~clk;
+    end
+
+    initial
+   
+   begin
+     $dumpfile("dump.vcd");
+      $dumpvars();
+  end
+
+ SD S1(X,clk,rst,res);
+   reg X,clk,rst;
+  wire res;integer i;
+ 
+  initial
+    begin   
+      clk=1;
+      rst=0;X=0;
+  X_array=16'b1010_0011_0111_1111;
+      #11;rst=1;
+      #10;rst=0;
+      #10; X=X_array[15];
+      #10; X=X_array[14];
+      #10; X=X_array[13];
+      #10; X=X_array[12];
+      #10; X=X_array[11];
+      #10; X=X_array[10];
+      #10; X=X_array[9];
+      #10; X=X_array[8];
+      #10; X=X_array[7];
+      #10; X=X_array[6];
+      #10; X=X_array[5];
+      #10; X=X_array[4];
+      #10; X=X_array[3];
+      #10; X=X_array[2];
+      #10; X=X_array[1];
+      #10; X=X_array[0];
+      #20;
+      $finish;
+    end
+ 
+endmodule

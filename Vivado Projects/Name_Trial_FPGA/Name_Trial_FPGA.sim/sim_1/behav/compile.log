@@ -1,0 +1,7 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Tanish IITDh Drive/Sequentia/Alphabets_7seg_FPGA/Letters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Letters
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Tanish IITDh Drive/Sequentia/Alphabets_7seg_FPGA/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Tanish IITDh Drive/Sequentia/Vivado Projects/Name_Trial_FPGA/Name_Trial_FPGA.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,6 @@
+set_property IOSTANDARD LVCMOS12 [get_ports in1]
+set_property IOSTANDARD LVCMOS12 [get_ports in2]
+set_property IOSTANDARD LVCMOS12 [get_ports out]
+set_property PACKAGE_PIN U9 [get_ports in1]
+set_property PACKAGE_PIN U8 [get_ports in2]
+set_property PACKAGE_PIN T8 [get_ports out]

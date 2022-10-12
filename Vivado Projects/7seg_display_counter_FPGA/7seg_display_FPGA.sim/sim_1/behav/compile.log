@@ -1,0 +1,11 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seg7_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/OneDrive/Desktop/Seven_segment_display/digits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/OneDrive/Desktop/Seven_segment_display/tenHz_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tenHz_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/OneDrive/Desktop/Seven_segment_display/seven_seg_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/OneDrive/Desktop/Vivado Projects/UART_TL16C750/7seg_display_FPGA/7seg_display_FPGA.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

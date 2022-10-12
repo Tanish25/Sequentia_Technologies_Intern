@@ -1,0 +1,53 @@
+// Code your design here
+module TFF(input rst,clk,t, output reg q);
+  always@(posedge clk)
+    begin
+    if(rst==1)
+      q<=0;
+      else if(t==1 && rst==0)
+        q<=~q;
+    end
+endmodule
+  
+module Gray(input rst,clk, output r2,r1,r0);
+ wire K1,K2,K3,X1,X2;
+  and A1(K1, ~r2,r1,~r0);
+  and A2(X1,~r2,~r1,r0);
+  and A3(X2,r2,r1,r0);
+  or R1(K2,X1,X2);
+  xor W1(K3,r2,r1,r0);
+  TFF T1(rst,clk,K1,r2);
+  TFF T2(rst,clk,K2,r1);
+  TFF T3(rst,clk,~K3,r0);
+endmodule
+
+// Code your testbench here
+// or browse Examples
+module Test;
+   reg clk,rst;
+  wire r2,r1,r0;
+    
+ 
+  Gray G1(rst,clk,r2,r1,r0);
+  initial
+    begin
+   
+      clk=1;
+      rst=0;
+     
+      #11;rst=1;
+      #10;rst=0;
+      #100;
+      $finish;
+    end
+    initial
+    begin
+     $dumpfile("dump.vcd");
+      $dumpvars();
+  end
+  always
+    begin
+    #5 clk=~clk;
+    end
+ 
+endmodule

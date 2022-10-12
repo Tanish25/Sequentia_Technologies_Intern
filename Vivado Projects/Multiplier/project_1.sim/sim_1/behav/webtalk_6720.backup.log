@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Jun 30 10:21:41 2022
+# Process ID: 2548
+# Log file: C:/Users/admin/OneDrive/Desktop/project_1/project_1.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/admin/OneDrive/Desktop/project_1/project_1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/admin/OneDrive/Desktop/project_1/project_1.sim/sim_1/behav/xsim.dir/Test_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 72.664 ; gain = 0.004
+
+    while executing
+"webtalk_transmit -clientid 2707828970 -regid "212476039_0_0_629" -xml C:/Users/admin/OneDrive/Desktop/project_1/project_1.sim/sim_1/behav/xsim.dir/Tes..."
+    (file "C:/Users/admin/OneDrive/Desktop/project_1/project_1.sim/sim_1/behav/xsim.dir/Test_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 30 10:21:50 2022...

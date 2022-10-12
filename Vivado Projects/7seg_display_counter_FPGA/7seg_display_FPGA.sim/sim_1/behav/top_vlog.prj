@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../../../Seven_segment_display/seg7_control.v"
+verilog xil_defaultlib  "../../../../../../Seven_segment_display/digits.v"
+verilog xil_defaultlib  "../../../../../../Seven_segment_display/tenHz_gen.v"
+verilog xil_defaultlib  "../../../../../../Seven_segment_display/seven_seg_top.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"

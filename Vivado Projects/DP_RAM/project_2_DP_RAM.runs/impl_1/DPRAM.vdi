@@ -1,0 +1,207 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jun 08 10:10:47 2022
+# Process ID: 10136
+# Log file: C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.runs/impl_1/DPRAM.vdi
+# Journal file: C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DPRAM.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/aartix7/xa7a15t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/aartix7/xa7a15t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/aartix7/xa7a15t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:01:31 . Memory (MB): peak = 452.660 ; gain = 257.953
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xa7a15t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xa7a15t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 452.660 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 18fae9db8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 838.184 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 18fae9db8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 838.184 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[0]__0[0].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[0]__0[1].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[0]__0[2].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[0]__0[3].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[0]__0[4].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[0]__0[5].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[0]__0[6].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[0]__0[7].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[1]__0[0].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[1]__0[1].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[1]__0[2].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[1]__0[3].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[1]__0[4].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[1]__0[5].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[1]__0[6].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[1]__0[7].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[2]__0[0].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[2]__0[1].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[2]__0[2].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[2]__0[3].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[2]__0[4].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[2]__0[5].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[2]__0[6].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[2]__0[7].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[3]__0[0].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[3]__0[1].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[3]__0[2].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[3]__0[3].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[3]__0[4].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[3]__0[5].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[3]__0[6].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[3]__0[7].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[4]__0[0].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[4]__0[1].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[4]__0[2].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[4]__0[3].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[4]__0[4].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[4]__0[5].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[4]__0[6].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[4]__0[7].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[5]__0[0].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[5]__0[1].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[5]__0[2].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[5]__0[3].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[5]__0[4].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[5]__0[5].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[5]__0[6].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[5]__0[7].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[6]__0[0].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[6]__0[1].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[6]__0[2].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[6]__0[3].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[6]__0[4].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[6]__0[5].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[6]__0[6].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[6]__0[7].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[7]__0[0].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[7]__0[1].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[7]__0[2].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[7]__0[3].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[7]__0[4].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[7]__0[5].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[7]__0[6].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+ERROR: [Opt 31-37] Multi-driver net found in the design: register[7]__0[7].
+Resolution: Please modify the design to fix the error. Ensure that the specific net has only one driver. Once the design is modified, then re-run the Vivado flow.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 18fae9db8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 838.184 ; gain = 0.000
+Implement Debug Cores | Checksum: 18fae9db8
+Logic Optimization | Checksum: 18fae9db8
+Ending Logic Optimization Task | Checksum: 18fae9db8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 838.184 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 65 Errors encountered.
+opt_design failed
+
+    while executing
+"opt_design "
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 08 10:14:29 2022...

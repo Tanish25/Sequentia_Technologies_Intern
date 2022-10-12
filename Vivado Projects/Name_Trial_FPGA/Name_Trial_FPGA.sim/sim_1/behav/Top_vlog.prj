@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../../Alphabets_7seg_FPGA/Letters.v"
+verilog xil_defaultlib  "../../../../../Alphabets_7seg_FPGA/top.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"

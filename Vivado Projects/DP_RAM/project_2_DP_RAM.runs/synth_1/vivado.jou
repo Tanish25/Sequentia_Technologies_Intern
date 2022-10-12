@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jun 08 10:06:46 2022
+# Process ID: 10412
+# Log file: C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.runs/synth_1/DPRAM.vds
+# Journal file: C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DPRAM.tcl

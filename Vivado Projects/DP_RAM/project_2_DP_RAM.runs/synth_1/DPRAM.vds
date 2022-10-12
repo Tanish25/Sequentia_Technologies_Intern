@@ -1,0 +1,383 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Jun 08 10:06:46 2022
+# Process ID: 10412
+# Log file: C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.runs/synth_1/DPRAM.vds
+# Journal file: C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DPRAM.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Synth 8-256} -limit 10000
+# set_msg_config -id {Synth 8-638} -limit 10000
+# create_project -in_memory -part xa7a15tcpg236-2I
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.cache/wt [current_project]
+# set_property parent.project_path C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v
+# catch { write_hwdef -file DPRAM.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top DPRAM -part xa7a15tcpg236-2I
+Command: synth_design -top DPRAM -part xa7a15tcpg236-2I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a15t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a15t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:17 ; elapsed = 00:01:11 . Memory (MB): peak = 240.766 ; gain = 69.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DPRAM' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DPRAM' (1#1) [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:21 ; elapsed = 00:01:21 . Memory (MB): peak = 274.988 ; gain = 104.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:01:23 . Memory (MB): peak = 274.988 ; gain = 104.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a15tcpg236-2I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:01:24 . Memory (MB): peak = 274.988 ; gain = 104.125
+---------------------------------------------------------------------------------
+ROM "register_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "register_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:01:25 . Memory (MB): peak = 281.930 ; gain = 111.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DPRAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/aartix7/xa7a15t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/aartix7/xa7a15t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/aartix7/xa7a15t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:01:47 . Memory (MB): peak = 408.355 ; gain = 237.492
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:47 . Memory (MB): peak = 409.602 ; gain = 238.738
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:36 ; elapsed = 00:01:47 . Memory (MB): peak = 409.602 ; gain = 238.738
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:53 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:53 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:01:53 . Memory (MB): peak = 428.996 ; gain = 258.133
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:01:53 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:53 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:54 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:56 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[7] with 1st driver pin 'register_reg[7][7]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[7] with 2nd driver pin 'register_reg[7][7]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[6] with 1st driver pin 'register_reg[7][6]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[6] with 2nd driver pin 'register_reg[7][6]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[5] with 1st driver pin 'register_reg[7][5]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[5] with 2nd driver pin 'register_reg[7][5]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[4] with 1st driver pin 'register_reg[7][4]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[4] with 2nd driver pin 'register_reg[7][4]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[3] with 1st driver pin 'register_reg[7][3]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[3] with 2nd driver pin 'register_reg[7][3]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[2] with 1st driver pin 'register_reg[7][2]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[2] with 2nd driver pin 'register_reg[7][2]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[1] with 1st driver pin 'register_reg[7][1]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[1] with 2nd driver pin 'register_reg[7][1]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[0] with 1st driver pin 'register_reg[7][0]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[7]__0[0] with 2nd driver pin 'register_reg[7][0]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[7] with 1st driver pin 'register_reg[6][7]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[7] with 2nd driver pin 'register_reg[6][7]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[6] with 1st driver pin 'register_reg[6][6]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[6] with 2nd driver pin 'register_reg[6][6]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[5] with 1st driver pin 'register_reg[6][5]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[5] with 2nd driver pin 'register_reg[6][5]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[4] with 1st driver pin 'register_reg[6][4]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[4] with 2nd driver pin 'register_reg[6][4]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[3] with 1st driver pin 'register_reg[6][3]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[3] with 2nd driver pin 'register_reg[6][3]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[2] with 1st driver pin 'register_reg[6][2]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[2] with 2nd driver pin 'register_reg[6][2]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[1] with 1st driver pin 'register_reg[6][1]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[1] with 2nd driver pin 'register_reg[6][1]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[0] with 1st driver pin 'register_reg[6][0]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[6]__0[0] with 2nd driver pin 'register_reg[6][0]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[7] with 1st driver pin 'register_reg[5][7]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[7] with 2nd driver pin 'register_reg[5][7]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[6] with 1st driver pin 'register_reg[5][6]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[6] with 2nd driver pin 'register_reg[5][6]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[5] with 1st driver pin 'register_reg[5][5]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[5] with 2nd driver pin 'register_reg[5][5]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[4] with 1st driver pin 'register_reg[5][4]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[4] with 2nd driver pin 'register_reg[5][4]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[3] with 1st driver pin 'register_reg[5][3]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[3] with 2nd driver pin 'register_reg[5][3]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[2] with 1st driver pin 'register_reg[5][2]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[2] with 2nd driver pin 'register_reg[5][2]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[1] with 1st driver pin 'register_reg[5][1]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[1] with 2nd driver pin 'register_reg[5][1]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[0] with 1st driver pin 'register_reg[5][0]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[5]__0[0] with 2nd driver pin 'register_reg[5][0]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[7] with 1st driver pin 'register_reg[4][7]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[7] with 2nd driver pin 'register_reg[4][7]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[6] with 1st driver pin 'register_reg[4][6]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[6] with 2nd driver pin 'register_reg[4][6]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[5] with 1st driver pin 'register_reg[4][5]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[5] with 2nd driver pin 'register_reg[4][5]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[4] with 1st driver pin 'register_reg[4][4]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[4] with 2nd driver pin 'register_reg[4][4]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[3] with 1st driver pin 'register_reg[4][3]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[3] with 2nd driver pin 'register_reg[4][3]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[2] with 1st driver pin 'register_reg[4][2]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[2] with 2nd driver pin 'register_reg[4][2]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[1] with 1st driver pin 'register_reg[4][1]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[1] with 2nd driver pin 'register_reg[4][1]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[0] with 1st driver pin 'register_reg[4][0]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[4]__0[0] with 2nd driver pin 'register_reg[4][0]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[7] with 1st driver pin 'register_reg[3][7]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[7] with 2nd driver pin 'register_reg[3][7]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[6] with 1st driver pin 'register_reg[3][6]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[6] with 2nd driver pin 'register_reg[3][6]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[5] with 1st driver pin 'register_reg[3][5]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[5] with 2nd driver pin 'register_reg[3][5]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[4] with 1st driver pin 'register_reg[3][4]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[4] with 2nd driver pin 'register_reg[3][4]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[3] with 1st driver pin 'register_reg[3][3]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[3] with 2nd driver pin 'register_reg[3][3]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[2] with 1st driver pin 'register_reg[3][2]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[2] with 2nd driver pin 'register_reg[3][2]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[1] with 1st driver pin 'register_reg[3][1]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[1] with 2nd driver pin 'register_reg[3][1]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[0] with 1st driver pin 'register_reg[3][0]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[3]__0[0] with 2nd driver pin 'register_reg[3][0]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[7] with 1st driver pin 'register_reg[2][7]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[7] with 2nd driver pin 'register_reg[2][7]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[6] with 1st driver pin 'register_reg[2][6]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[6] with 2nd driver pin 'register_reg[2][6]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[5] with 1st driver pin 'register_reg[2][5]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[5] with 2nd driver pin 'register_reg[2][5]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[4] with 1st driver pin 'register_reg[2][4]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[4] with 2nd driver pin 'register_reg[2][4]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[3] with 1st driver pin 'register_reg[2][3]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[3] with 2nd driver pin 'register_reg[2][3]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[2] with 1st driver pin 'register_reg[2][2]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[2] with 2nd driver pin 'register_reg[2][2]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[1] with 1st driver pin 'register_reg[2][1]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[1] with 2nd driver pin 'register_reg[2][1]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[0] with 1st driver pin 'register_reg[2][0]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[2]__0[0] with 2nd driver pin 'register_reg[2][0]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[1]__0[7] with 1st driver pin 'register_reg[1][7]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[1]__0[7] with 2nd driver pin 'register_reg[1][7]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[1]__0[6] with 1st driver pin 'register_reg[1][6]__0/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net register[1]__0[6] with 2nd driver pin 'register_reg[1][6]/Q' [C:/Users/admin/OneDrive/Desktop/project_2_DP_RAM/project_2_DP_RAM.srcs/sources_1/new/DPRAM_design.v:35]
+INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       64|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:56 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:56 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT5  |    16|
+|3     |LUT6  |    32|
+|4     |MUXF7 |    16|
+|5     |FDRE  |    84|
+|6     |FDSE  |    60|
+|7     |IBUF  |    28|
+|8     |OBUF  |    16|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   254|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:56 . Memory (MB): peak = 428.996 ; gain = 258.133
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 128 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:09 . Memory (MB): peak = 428.996 ; gain = 240.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:57 . Memory (MB): peak = 428.996 ; gain = 258.133
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 0 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:01:37 . Memory (MB): peak = 499.684 ; gain = 311.027
+# write_checkpoint -noxdef DPRAM.dcp
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 499.684 ; gain = 0.000
+# catch { report_utilization -file DPRAM_utilization_synth.rpt -pb DPRAM_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 499.684 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 08 10:09:39 2022...
